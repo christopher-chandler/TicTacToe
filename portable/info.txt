@@ -1,0 +1,2 @@
+This is a compiled portable version for windows
+so that it can be played in the terminal without having to install python.

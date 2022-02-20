@@ -1,5 +1,5 @@
-# Tic-Tac-Toe
-# by Simon Lauer
+# Tic-Tac-Toe by Simon Lauer 2022
+# Expansions by Christopher Chandler 2022
 
 
 class Field:
