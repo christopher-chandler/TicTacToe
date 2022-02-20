@@ -29,7 +29,14 @@ Load in the .json file stored in the portable and load it into [auto-to-py-exe](
 game from the source code.
 
 ## Dependencies
-All of the code is written in pure Python. Therefore, no dependencies are required at the moment to play this game.
+
+The only dependencies are
+```
+termcolor~=1.1.0
+colorama~=0.4.4
+```
+which can be found in the requirements.txt file
+
 
 ## Game Play
 

@@ -41,12 +41,12 @@ class Board:
         for row in self.board:
             col = [col.value for col in row]
             col = ["o" if k == 1 else ("x" if k == -1 else " ") for k in col]
-            print("{}{} | {} | {} | {} |".format(20 * " ",rowLabels[count] ,*col))
+            print("{}{} | {} | {} | {} |".format(20 * " ", rowLabels[count], *col))
             print("{}---------------".format(20 * " "))
             count += 1
         print("\n")
 
-    def hasWon(self, row, col):
+    def has_won(self, row, col):
         current_row = self.board[row]
         current_col = []
         for i in range(3):
@@ -90,6 +90,7 @@ class Board:
         else:
             return False
 
+
 class Player:
     def __init__(self, name = "", id = 1):
         self.__name = name
@@ -117,7 +118,12 @@ class Player:
         else:
             raise ValueError
 
-    def makeMove(self):
+
+    def make_move(self):
+        """
+
+        :return:
+        """
         while True:
             try:
                 move = input()
@@ -128,4 +134,6 @@ class Player:
                 else:
                     print("Not a valid move. Try again.")
             except IndexError:
+                # An index error occurs if the player makes too many incorrect moves.
+                # This captures those errors and prevents the game from crashing.
                 continue
