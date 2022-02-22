@@ -17,5 +17,5 @@ class GameMessageKeys:
     chose_player = "Enter the respective number to choose the player"
     not_valid_option = colored("Not a valid option. Please try again.", "red")
     make_move = "make a move"
-    not_valid_move = colored("Not a valid move","red")
-    has_won_game = colored(" has won!","blue")
+    not_valid_move = colored("Not a valid move", "red")
+    has_won_game = colored(" has won!", "blue")
